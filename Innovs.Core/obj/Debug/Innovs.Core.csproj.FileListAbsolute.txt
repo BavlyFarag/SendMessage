@@ -1,0 +1,4 @@
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Core\bin\Debug\Innovs.Core.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Core\bin\Debug\Innovs.Core.pdb
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Core\obj\Debug\Innovs.Core.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Core\obj\Debug\Innovs.Core.pdb

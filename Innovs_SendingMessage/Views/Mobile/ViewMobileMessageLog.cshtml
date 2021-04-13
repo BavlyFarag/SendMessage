@@ -1,0 +1,54 @@
+﻿@model List<Innovs.Core.Data.MessageLog>
+
+
+@{
+    ViewBag.Title = "View Mobile Messages Log";
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>All Messages Log</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content" style="display: block;">
+
+                @(Html
+    .Grid(Model)
+    .Build(columns =>
+    {
+        columns.Add(model => model.MobileInfo.Name).Titled("Name");
+        columns.Add(model => model.MobileInfo.MobileNumber).Titled("Mobile Number");
+        columns.Add(model => model.MessageDetails).Titled("Message Details");
+        columns.Add(model => model.IsSend).Titled("Is Send");
+        columns.Add(model => model.SendingDate).Titled("Sending Date");
+        columns.Add(model => model.User.UserName).Titled("Sended By");
+    })
+    .Empty("No data found")
+    .Filterable()
+    .Sortable()
+       .Pageable(pager =>
+       {
+           pager.ShowPageSizes = true;
+           pager.PagesToDisplay = 3;
+           pager.CurrentPage = 2;
+           pager.RowsPerPage = 2;
+       })
+
+                )
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

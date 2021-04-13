@@ -1,0 +1,81 @@
+﻿@model  Innovs.Core.Data.User
+
+
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Innovs</title>
+    <!-- Bootstrap -->
+    <link href="~/Content/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/Content/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/Content/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="~/Content/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="~/Content/build/css/custom.min.css" rel="stylesheet">
+    @*@Scripts.Render("~/bundles/jquery")*@
+    <script src="~/Scripts/jquery-1.12.4.js"></script>
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+</head>
+
+<body class="login">
+    <div>
+        <a class="hiddenanchor" id="signup"></a>
+        <a class="hiddenanchor" id="signin"></a>
+        <div class="login_wrapper">
+            <div class="animate form login_form">
+                <section class="login_content">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <h1>
+                            Login
+                        </h1>
+                        <div>
+                            @Html.TextBoxFor(model => model.UserName,new { @required = "required", placeholder = "Email", @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.UserName,null, new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            @Html.TextBoxFor(model => model.Password, new { @required = "required", @placeholder = "Password", @Type = "password", @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Password, null, new { @class = "text-danger" })
+                        </div>
+                        <div>
+                            <input type="submit" value="Login" class="btn btn-default submit" />
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <div>
+                            @if (!string.IsNullOrEmpty(ViewBag.Error))
+                            {
+                                <p class="alert alert-danger">@ViewBag.Error</p>
+                            }
+                        </div>
+                    }
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

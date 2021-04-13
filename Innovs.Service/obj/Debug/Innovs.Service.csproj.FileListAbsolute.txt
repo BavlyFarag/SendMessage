@@ -1,0 +1,11 @@
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Service.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Service.pdb
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\obj\Debug\Innovs.Service.csprojResolveAssemblyReference.cache
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\obj\Debug\Innovs.Service.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\obj\Debug\Innovs.Service.pdb
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Core.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Data.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\EntityFramework.dll
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Core.pdb
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\Innovs.Data.pdb
+c:\users\bavly\documents\visual studio 2015\Projects\Innovs_SendingMessage\Innovs.Service\bin\Debug\EntityFramework.xml
